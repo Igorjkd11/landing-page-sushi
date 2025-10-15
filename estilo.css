@@ -1,0 +1,201 @@
+
+:root {
+    --color-primary: #32CD32; 
+    --color-secondary: #E35D39; 
+    --color-background: #9b9999; 
+    --color-text: #FFFFFF; 
+    --color-dark-text: #E0E0E0; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Bebas Neue', sans-serif; /* Fonte peculiar para títulos */
+    letter-spacing: 2px;
+}
+
+
+header {
+    background-color: rgba(141, 140, 140, 0.9); /* Fundo semi-transparente */
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-secondary);
+}
+/*minha logo criada por mim */
+.logo-container img {
+   
+    width: 190px; 
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s, background-color 0.3s;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+
+.hero {
+    background: url('placeholder_sushi_bg.jpg') no-repeat center center/cover; /* Altere para uma imagem de sushi de alta qualidade */
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF7043; /* Uma variação do laranja */
+}
+
+.menu {
+    background-color: #646464; /* Cinza escuro para diferenciar do fundo principal */
+}
+
+.menu h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: var(--color-secondary);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-category {
+    background-color: #979696;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+    border-left: 5px solid var(--color-primary);
+}
+
+.menu-category h3 {
+    color: var(--color-primary);
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item h4 {
+    font-size: 1.5em;
+    color: var(--color-text);
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    color: var(--color-dark-text);
+    font-size: 0.9em;
+}
+
+.price {
+    display: block;
+    color: var(--color-secondary);
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+.contact {
+    background-color: var(--color-background);
+}
+
+.contact h2 {
+    color: var(--color-primary);
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+address p {
+    margin: 10px 0;
+    font-style: normal;
+}
+
+
+footer {
+    background-color: #8f8e8e;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--color-dark-text);
+    border-top: 1px solid var(--color-secondary);
+}
+.copyright{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+border-radius: 1px;
+}
